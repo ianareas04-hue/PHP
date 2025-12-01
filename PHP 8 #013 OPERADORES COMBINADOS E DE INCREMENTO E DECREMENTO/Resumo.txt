@@ -1,0 +1,25 @@
+Segue a transcrição do vídeo "PHP 8 #013 OPERADORES COMBINADOS E DE INCREMENTO E DECREMENTO" do canal João Ribeiro, com a devida identificação e explicação dos principais conceitos, argumentos e temas centrais abordados:
+
+O professor explica que em PHP, operadores de atribuição combinados permitem alterar o valor de uma variável a partir do seu valor original [[00:00](http://www.youtube.com/watch?v=aScOZMvtQho&t=0)].
+
+**Principais Conceitos e Exemplos:**
+
+* **Operadores de Atribuição Combinados** [[00:00](http://www.youtube.com/watch?v=aScOZMvtQho&t=0)]: Uma forma simplificada de escrever operações que alteram o valor de uma variável com base em seu valor atual.
+    * **Exemplo tradicional:** `a = a + 20` [[00:13](http://www.youtube.com/watch?v=aScOZMvtQho&t=13)]
+    * **Exemplo combinado:** `a += 20` [[00:43](http://www.youtube.com/watch?v=aScOZMvtQho&t=43)] (que significa `a = a + 20`)
+    * Isso se aplica a outras operações aritméticas como subtração (`-=`), multiplicação (`*=`), divisão (`/=`).
+
+* **Operadores de Incremento (`++`) e Decremento (`--`)** [[01:08](http://www.youtube.com/watch?v=aScOZMvtQho&t=68)]: Permitem adicionar ou remover exatamente uma unidade do valor de uma variável.
+    * **Incremento:** `a++` ou `++a` (equivalente a `a = a + 1`) [[01:24](http://www.youtube.com/watch?v=aScOZMvtQho&t=84)]
+    * **Decremento:** `a--` ou `--a` (equivalente a `a = a - 1`) [[02:05](http://www.youtube.com/watch?v=aScOZMvtQho&t=125)]
+    * **Implicação prática:** Estes operadores são muito úteis em "ciclos" (repetições de código) onde é necessário aumentar ou diminuir o valor de uma variável em uma unidade a cada repetição [[01:41](http://www.youtube.com/watch?v=aScOZMvtQho&t=101)].
+
+* **Pré-incremento/decremento vs. Pós-incremento/decremento** [[02:25](http://www.youtube.com/watch?v=aScOZMvtQho&t=145)]: A posição do operador (`++` ou `--`) em relação à variável influencia quando a alteração do valor ocorre.
+    * **Pós-decremento (ex: `a--`)** [[02:59](http://www.youtube.com/watch?v=aScOZMvtQho&t=179)]: O valor original da variável é utilizado na expressão primeiro, e *depois* a variável é decrementada.
+        * **Exemplo:** Se `a = 100`, um `echo a--` exibirá `100`. No comando seguinte, `a` já terá o valor `99` [[03:06](http://www.youtube.com/watch?v=aScOZMvtQho&t=186)].
+    * **Pré-decremento (ex: `--a`)** [[03:39](http://www.youtube.com/watch?v=aScOZMvtQho&t=219)]: A variável é decrementada *primeiro*, e *depois* o novo valor (já decrementado) é utilizado na expressão.
+        * **Exemplo:** Se `a = 100`, um `echo --a` exibirá `99` [[03:47](http://www.youtube.com/watch?v=aScOZMvtQho&t=227)].
+    * A mesma lógica se aplica para pré-incremento e pós-incremento.
+
+O vídeo pode ser acessado através do seguinte link: [https://www.youtube.com/watch?v=aScOZMvtQho](https://www.youtube.com/watch?v=aScOZMvtQho)
+http://googleusercontent.com/youtube_content/2

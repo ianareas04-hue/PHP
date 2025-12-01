@@ -1,0 +1,25 @@
+Segue a transcrição do vídeo "PHP 8 #011 TIPOS DE DADOS" do canal João Ribeiro, com os principais conceitos abordados:
+
+O professor discute os tipos de dados em PHP, destacando que as variáveis podem ter diferentes tipos de valores e que o tipo pode mudar ao longo do script [[00:00](http://www.youtube.com/watch?v=SP1anP0c7lg&t=0)]. Ele enfatiza a importância de prestar atenção à forma como os valores das variáveis são utilizados e alterados.
+
+**Principais conceitos e exemplos:**
+
+* **Variáveis implícitas** [[00:32](http://www.youtube.com/watch?v=SP1anP0c7lg&t=32)]: O próprio sistema identifica o tipo de valor. Se for um número, será tratado como número; se for texto, será tratado como texto.
+* **Int (Inteiro)** [[01:03](http://www.youtube.com/watch?v=SP1anP0c7lg&t=63)]: Variáveis que armazenam valores inteiros, como `100`.
+* **Float (Ponto flutuante)** [[01:11](http://www.youtube.com/watch?v=SP1anP0c7lg&t=71)]: Variáveis com casas decimais, separadas por ponto.
+* **Booleanos** [[01:23](http://www.youtube.com/watch?v=SP1anP0c7lg&t=83)]: Variáveis que só podem ter dois valores: `true` (verdadeiro) ou `false` (falso).
+* **Strings (Alfanuméricas)** [[01:36](http://www.youtube.com/watch?v=SP1anP0c7lg&t=96)]: Cadeias de caracteres que podem conter letras, dígitos e símbolos. São definidas com aspas duplas ou simples (ex: "Olá mundo").
+* **Variáveis especiais** [[02:00](http://www.youtube.com/watch?v=SP1anP0c7lg&t=120)]:
+    * **Array** [[02:12](http://www.youtube.com/watch?v=SP1anP0c7lg&t=132)]: Uma coleção de valores, como uma variável com vários valores dentro.
+    * **Objetos** [[02:27](http://www.youtube.com/watch?v=SP1anP0c7lg&t=147)]: Variáveis que não têm um valor específico, mas são instâncias de uma classe. São estruturas mais complexas com propriedades e métodos associados.
+    * **Null (Nulo)** [[02:50](http://www.youtube.com/watch?v=SP1anP0c7lg&t=170)]: Uma variável definida e iniciada, mas sem valor (nem inteiro, nem string, nem array, nem objeto).
+
+**Implicações teóricas e práticas:**
+
+O professor também ressalta a diferença no comportamento de variáveis declaradas mas não definidas antes e depois do PHP 8 [[03:18](http://www.youtube.com/watch?v=SP1anP0c7lg&t=198)]:
+
+* **Antes do PHP 8** [[03:28](http://www.youtube.com/watch?v=SP1anP0c7lg&t=208)]: Uma variável não atribuída gerava um `notice` (informação) indicando que a variável não estava definida.
+* **Depois do PHP 8** [[03:48](http://www.youtube.com/watch?v=SP1anP0c7lg&t=228)]: A mensagem para uma variável não definida passou a ser um `warning` (aviso).
+
+O vídeo pode ser acessado através do seguinte link: [https://www.youtube.com/watch?v=SP1anP0c7lg](https://www.youtube.com/watch?v=SP1anP0c7lg)
+http://googleusercontent.com/youtube_content/0

@@ -1,0 +1,69 @@
+O vídeo, intitulado "PHP 8 \#031 BREAK, CONTINUE E GOTO," aborda três instruções de controle de fluxo de código que podem ser utilizadas em conjunto com os ciclos (loops): **`break`**, **`continue`** e **`goto`**.
+
+Abaixo está a transcrição integral da fala do professor, seguida pela análise detalhada do conteúdo.
+
+-----
+
+### Transcrição Integral da Fala do Professor
+
+**[[00:00](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=0)]** Olá, vamos complementar as informações relacionadas com ciclos, introduzindo aqui **três conceitos** que são utilizados. Alguns com mais frequência **[[00:09](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=9)]** do que outros, mas são de facto utilizados: que é o conceito do **`break`**, o **`continue`** e o **`goto`**.
+
+**[[00:13](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=13)]** Existem duas funções especiais dentro dos *loops*, que é o `break` e o `continue`. Eu não considero que seja **[[00:19](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=19)]** especial o `goto`. Vamos ver lá como é que ele funciona.
+
+No caso do **`break`**, ele serve para **interromper a [[00:25](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=25)] execução de um loop**. Vocês poderão estar a perguntar: "Então, mas um *loop* tem um conjunto de ciclos que **[[00:32](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=32)]** são findáveis, isto é, que terminam a uma determinada altura. Porque é que eu quero interromper um *loop* a meio?" **[[00:37](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=37)]**
+
+Bom, reparem aqui esta circunstância. Por exemplo, se eu quiser fazer um `for` e disser que ele tem o iniciador **[[00:44](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=44)]** de 0, e enquanto o `$i` for menor que 20, ele vai fazendo o ciclo. Portanto, mais ou menos 20 voltas. E **[[00:51](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=51)]** o que acontece aqui é o seguinte: se eu quiser que, por exemplo, se o valor do `$i` a uma determinada **[[00:56](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=56)]** altura for igual a 10, eu quiser que o meu *loop* seja **quebrado**, então, eu coloco simplesmente um **`break`** e **[[01:04](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=64)]** um ponto e vírgula. E o que é que ele vai fazer? Vai **interromper o loop**. Ora, isso faz com que a **[[01:08](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=68)]** execução deste ciclo salte para o passo seguinte.
+
+Então, o que acontece aqui é que eu deveria ter em condições normais **[[01:15](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=75)]** o `echo` do `$i` até ao 20 (do 0 ao 20), mas se nós olharmos aqui para o exemplo do meu **[[01:21](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=81)]** *browser*, ele apenas apresentou até ao valor **10**. Está aqui. Neste caso, `echo HR` apenas para colocar **[[01:30](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=90)]** aqui este separador.
+
+Fazer este exemplo aqui do João e da Ana. Reparem que eu tenho aqui um conjunto de três **[[01:36](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=96)]** nomes, um *array* com o "João", "Ana" e "Carlos", e tenho um ciclo `foreach` (neste caso, é outro tipo dos **[[01:42](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=102)]** ciclos que nós falamos aqui). Tem também o `echo` de cada um dos nomes à medida que o ciclo vai **[[01:47](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=107)]** sendo executado, mas reparem que eu coloquei aqui uma condição na qual eu pergunto: "Se o nome for igual a **[[01:52](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=112)]** **Ana**, então faz um **`break`**." Então, o que aconteceu aqui foi o seguinte: "João", **"Ana"** ou "Carlos" **não aparece** [[01:56](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=116)].
+
+**[[02:00](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=120)]** Vejamos agora como funciona o **`continue`**. O `continue` tem um comportamento diferente do `break` no sentido em que o `break` quebra **[[02:08](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=128)]** o funcionamento do ciclo, o `continue` **passa para o ciclo seguinte**, ou neste caso, para a volta seguinte desse **[[02:15](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=135)]** *loop*.
+
+Como é que isso funciona na prática? Para o mesmo exemplo: para `$i` igual a 0, e enquanto `$i` for **[[02:21](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=141)]** menor que 20, apresentar o `$i`. Mas eu tenho aqui uma informação que é a seguinte: "Olha, se o `$i` for **[[02:26](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=146)]** igual a **10**, então **`continue`**." Isto é, **volta ao inicial do loop**.
+
+Então, o que vai acontecer é: quando o ciclo **[[02:33](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=153)]** é igual a 9, ele passa a execução, faz o `echo`. Quando o ciclo passa a ser com `$i` igual a 10, **[[02:39](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=159)]** o que ele faz é o seguinte: chega aqui, `$i` é igual a 10? É verdadeiro. Então, o **`continue`**. Então, **[[02:45](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=165)]** ele já **não vai executar este bloco de código até ao fim**, vai simplesmente chegar aqui e vai voltar novamente **[[02:51](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=171)]** ao início, com o `$i` entretanto já incrementado.
+
+Então, o que é que irá acontecer nesta circunstância? O valor do `$i` igual a **[[02:58](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=178)]** **10 não será apresentado**. E se olharmos aqui, 8, 9, o **10 não apareceu**, porque o **[[03:05](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=185)]** ciclo foi obrigado a regressar ao seu início, e voltamos depois para apresentar o 11, e continua o ciclo até ao **[[03:11](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=191)]** fim.
+
+A ver o que aconteceu aqui neste exemplo do João e do Carlos. Aqui neste caso, nós temos a **[[03:18](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=198)]** mesma coleção: `$nomes` (três nomes: "João", "Ana" e "Carlos") e fizemos o ciclo `foreach`. Mas perguntamos: "Se o nome for **[[03:26](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=206)]** igual a **Ana**, **`continue`**." Então, perguntamos se o nome for igual a este. Então, por isso, aparece apenas **João e [[03:32](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=212)] Carlos**, porque quando o ciclo tem nome igual a "Ana", ele faz um `continue`, **não faz o `echo`**, regressa daqui **[[03:39](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=219)]** ao início e continua até ao fim. Daí termos o "João" e o "Carlos".
+
+Então, este, finalmente, aqui, o que **[[03:46](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=226)]** que aconteceu com este exemplo? Tem aqui uma série de valores. E depois, aqui, nesse caso, a utilização do **[[03:52](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=232)]** **`goto`** é muito pouco usada, porque torna a leitura do código um bocadinho mais complicada de se fazer, é porque **[[03:59](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=239)]** vamos dizer ao código para saltar para um determinado espaço.
+
+Bom, neste caso, foi introduzido no PHP **[[04:06](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=246)]** 5.3 e **permite sair do *loop***, mas **ir para uma linha de código específica**, ok? Ou, nesse caso, para um **[[04:13](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=253)]** espaço do código específico que é referido, neste caso, por esta coisinha, por um **`Label`** (`:`) [[04:16](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=256)].
+
+E isso funciona desta forma. Reparem: **[[04:20](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=260)]** vocês têm um *loop* exatamente igual àquele que eu inicialmente apresentei neste vídeo. Em termos, `$i` igual a 0 **[[04:26](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=266)]** e enquanto `$i` for menor que 20, `$i` vai incrementando. Ele vai apresentando. Mas eu pergunto, assim: "Se o `$i` **[[04:33](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=273)]** for igual a **10**, **`goto test`**." Então, ele vai voltar ao inicial do *loop*? Não. Este `test` aqui está **[[04:41](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=281)]** mal. Ele vai saltar para o **`Label`**, que é o `Label` esta situação que nós aqui temos. Este **`test:`** [[04:48](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=288)] **[[04:50](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=290)]** vai ser, então, o ponto para o qual o meu *loop* vai saltar. Isto é, ao chegar aqui, verificar que esta **[[04:56](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=296)]** condição é verdadeira, o `goto test` vai saltar para aqui e vai apresentar o `echo` aqui no nosso **[[05:02](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=302)]** *browser*. Este texto deveria ser apresentado no fim do *loop*, que diz "Fim do Loop", não seria apresentado, e sim **[[05:07](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=307)]** seria apresentado aqui o `echo` aqui.
+
+Reparem como é que está. Eu volto a frisar que, no caso do **`break`** **[[05:14](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=314)]** e do **`continue`**, **são frequentemente utilizados**. No caso do **`goto`**, é **muito pouco utilizado** [[05:18](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=318)].
+
+-----
+
+### Análise dos Principais Conceitos, Argumentos e Implicações
+
+O vídeo explica como as instruções de controle `break`, `continue` e `goto` alteram o fluxo de execução dentro dos ciclos em PHP.
+
+#### **1. Conceitos Centrais e Argumentos**
+
+| Instrução | Conceito Principal | Implicação Prática |
+| :--- | :--- | :--- |
+| **`break`** | Usado para **interromper imediatamente** [[00:25](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=25)] a execução de um ciclo (*loop*) [[01:04](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=64)]. | O código salta para a instrução **imediatamente posterior** ao *loop*. É útil para sair de um ciclo quando uma condição específica (como encontrar um valor) é atingida, economizando processamento. |
+| **`continue`** | Usado para **pular a iteração atual** e **avançar para a próxima** volta do ciclo [[02:08](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=128)]. | Quando o `continue` é executado, o código dentro do *loop* é ignorado a partir desse ponto [[02:45](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=165)], e a execução retorna ao topo do *loop* para reavaliar a condição ou aplicar o incremento [[02:51](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=171)]. |
+| **`goto`** | Permite que o programa **salte para uma linha de código específica** dentro do mesmo contexto, identificada por um **rótulo (`Label`)** [[04:06](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=246)], [[04:41](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=281)]. | **Não recomendado** [[03:52](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=232)], [[05:18](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=318)]. Embora permita sair de um *loop* e ir para um ponto específico do código, torna a **leitura e a manutenção do código muito mais difíceis** [[03:59](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=239)]. |
+
+-----
+
+#### **2. Exemplos Utilizados**
+
+| Exemplo | Estrutura | Função e Resultado |
+| :--- | :--- | :--- |
+| **Exemplo `break` (Contador)** | `for ($i = 0; $i < 20; $i++) { if ($i == 10) break; ... }` | O ciclo deveria ir de 0 a 19, mas o `break` faz com que o *loop* **pare no 10**. Apenas os valores de 0 a 9 são apresentados [[01:15](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=75)], [[01:21](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=81)]. |
+| **Exemplo `break` (`foreach`)** | `foreach ($nomes as $nome) { if ($nome == 'Ana') break; ... }` | O *array* contém "João", "Ana" e "Carlos". O `break` é ativado em "Ana", **interrompendo** o ciclo. Apenas **"João"** é exibido, e "Ana" e "Carlos" não aparecem [[01:52](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=112)], [[01:56](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=116)]. |
+| **Exemplo `continue` (Contador)** | `for ($i = 0; $i < 20; $i++) { if ($i == 10) continue; ... }` | O ciclo executa todas as voltas, **exceto a volta onde `$i` é igual a 10**. O número **10 não é exibido** [[02:58](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=178)], [[03:05](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=185)], mas o ciclo continua do 11 até o fim. |
+| **Exemplo `continue` (`foreach`)** | `foreach ($nomes as $nome) { if ($nome == 'Ana') continue; ... }` | Quando o nome é "Ana", o `continue` é executado, fazendo com que o `echo` seja **ignorado para aquele elemento**. O ciclo pula "Ana", mas **continua** para "Carlos". Apenas **"João" e "Carlos"** são exibidos [[03:26](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=206)], [[03:32](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=212)]. |
+| **Exemplo `goto`** | `goto test;` onde `test:` é um rótulo em outra parte do código [[04:33](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=273)]. | Demonstra o salto direto no código, pulando as instruções intermediárias e o final do *loop* [[04:56](http://www.youtube.com/watch?v=MNNZLtkfZ7g&t=296)]. |
+
+-----
+
+URL do vídeo: [PHP 8 \#031 BREAK, CONTINUE E GOTO](https://www.google.com/search?q=http://www.youtube.com/watch%3Fv%3DMNNZLtkfZ7g%26list%3DPLXik_5Br-zO9wODVI0j58VuZXkITMf7gZ%26index%3D31)
+
+http://googleusercontent.com/youtube_content/7

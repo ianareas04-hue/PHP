@@ -1,0 +1,71 @@
+O vídeo, intitulado "PHP 8 \#026 NOVA INSTRUÇÃO CONDICIONAL MATCH DO PHP 8," introduz a nova expressão condicional **`match`**, adicionada na versão 8 do PHP, apresentando-a como uma alternativa mais concisa e estrita ao `switch`.
+
+Abaixo está a transcrição integral da fala do professor, seguida pela análise do conteúdo.
+
+-----
+
+### Transcrição Integral da Fala do Professor
+
+**[[00:00](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=0)]** E com o PHP 8 é introduzido uma nova expressão condicional designada por **`match`**. Ela vem, de alguma forma, ser **[[00:08](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=8)]** muito semelhante ao `switch`, mas com uma **sintaxe mais concisa** (isto é, uma sintaxe mais compacta).
+
+Mas temos aqui um **[[00:16](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=16)]** exemplo tradicional de um `switch` em que nós temos aqui um `switch`. Temos aqui um valor `x = 10`. E **[[00:23](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=23)]** depois temos aqui um `switch`, uma estrutura bem grande em que pergunta o seguinte: `switch` `$x` a analisar. Caso de `$x`... **[[00:31](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=31)]** Se caso `$x` for 5, ele faz um `echo` para o "número 5". Se for 10, faz um `echo` para **[[00:36](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=36)]** o "número 10". Se for 15, faz um `echo` para o "número 15". Se não for nenhum destes valores, executa esta declaração que **[[00:42](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=42)]** está.
+
+Ora, neste caso, se fosse executar esta expressão que aqui está, obviamente que ele iria **[[00:49](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=49)]** executar aqui para o "número 10" e iria sair fora com o `break` e ia sair fora do `switch`, avançando **[[00:55](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=55)]** no código. Ok? Depois tenho aqui um `echo HR` que é para criar um separador, para quando eu vir o **[[01:00](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=60)]** resultado final deste exercício que eu tenho neste *script*.
+
+Esta é a estrutura com `switch`. Vamos ver como é que fica com **[[01:06](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=66)]** um `match`. E agora, reparem na diferença da quantidade de código. No `match` eu posso fazer qualquer coisa deste género: **[[01:12](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=72)]** posso fazer um `echo` e depois colocar aqui `match` `$x`. E se o valor for 5, eu apresento isto. **[[01:22](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=82)]** Porque este valor passa a fazer parte do `echo`. Eu poderia ter aqui uma variável igual a `match`. Ok? Se **[[01:29](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=89)]** a variável fosse igual a `match`, então ela ia passar a ter este valor, consoante a condição.
+
+Agora, neste caso, **[[01:35](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=95)]** reparem que o `$x` é igual a, neste caso aqui, a 10. Então, o que é que ele vai verificar? **[[01:41](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=101)]** Se for igual a 5, passa a ser para o "número 5"? Não. Isso aqui não vai ser executado. Se for **[[01:46](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=106)]** igual a 10, sempre vai ser executado. Então, ele vai atribuir aqui este— esta *string* ao `echo`. Se **[[01:52](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=112)]** for o 15, para no 15 é o valor que atribui ao `echo`. Caso contrário, se não for nenhum destes **[[01:57](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=117)]** valores, também tem um valor `default`. É com estas setas, e aqui é um "número diferente de 5, 10 ou **[[02:03](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=123)]** 15".
+
+No caso do `match`, **apenas uma expressão é válida por cada condição**, ao contrário do que acontece com `switch` em **[[02:10](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=130)]** que nós poderíamos acrescentar aqui várias vezes o `echo`. O `switch`, ou melhor, o `match`, perdão, tem essa **[[02:19](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=139)]** característica: que nós só devemos usar uma expressão lá pelo meio.
+
+E é possível executar a mesma operação para várias **[[02:25](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=145)]** condições. Reparem que isso também acontece com o `switch`. Ok? Nós vamos ver aqui como o `switch` também é **[[02:31](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=151)]** possível isso. Chegamos aqui para este bloco do código. Ok? Este que está relacionado, nós podemos verificar o seguinte: **[[02:39](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=159)]** `$x = 10`. `$opção` é igual— isto é uma variável nova — é igual ao resultado da avaliação desta condição. E **[[02:47](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=167)]** o `match` é o `$x`. Se `$x` for igual a 2, então `$opção` é 2. Não é o caso. **[[02:53](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=173)]** Se for 4, 5 ou 6. Isso é o que significa colocar este valor daqui, todo separado por vírgula. Então, **[[03:00](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=180)]** é 4, 5 ou 6. Caso contrário, é "outro valor". Nesta circunstância, neste exemplo aqui, o valor de `$opção` iria **[[03:09](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=189)]** passar a ser "outro valor". Porque? Porque nenhuma destas condições que está corresponde à condição do valor do `$x` **[[03:16](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=196)]** aqui.
+
+Reparem também então que no `switch` também é possível fazer esta operação. Isto é, atribuir o mesmo tipo de **[[03:24](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=204)]** *output* para um conjunto de diferentes *cases*. Eu tenho aqui o `$x = 10` e ele dizem... O bloco que **[[03:30](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=210)]** está é exatamente este que está transformado para `switch`. Quem? Então, neste caso, nós temos aquilo que **[[03:36](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=216)]** é `case 2`, que é equivalente a este. Depois temos aqui o `case 4, 5 ou 6`, que é isto que aqui **[[03:42](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=222)]** está e que resulta nesta circunstância que está. Penso que é relativamente simples perceber como é que isto funciona.
+
+É importante: no `switch`, as comparações podem ser feitas só por **valor** [[03:48](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=228)]. Isto é, não tem um operador de comparação **[[03:57](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=237)]** mais explícito do que o valor. E no caso do `match`, elas são sempre feitas por **tipo** **[[04:05](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=245)]** **e valor**.
+
+Neste caso, vamos ver aqui um exemplo concreto. No caso do `switch`, nós podemos ter aqui uma **[[04:12](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=252)]** variável `$x` é igual a uma *string* que tem o algarismo 1. Ora, se eu for perguntar ao `switch`: "Caso **[[04:18](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=258)]** seja 1 (o valor do `$x`), eu faço um `echo` 'é um valor inteiro' e faz um `break`." Caso seja **[[04:26](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=266)]** 1, mas como se fosse *string*, eu faço um— Afinal, o `break` aqui não é necessário, o **[[04:32](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=272)]** `break`, porque se trata do último *case*. Ok? Já temos— só temos que utilizar o `break` nos *cases* anteriores ao **[[04:38](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=278)]** último. Bom, neste caso, o *output* de discussão deste `switch` será a expressão "inteiro". Ok? Pois é que iria **[[04:46](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=286)]** aparecer seria este daqui e não este, porque no `switch` este valor foi avaliado como **valor** e não como **valor** **[[04:55](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=295)]** **e tipo**. Então, quando nós avaliamos uma *string* que é um, ele vai fazer uma coerção implícita para o **[[05:02](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=302)]** valor inteiro e vai dizer que é um valor inteiro.
+
+No caso do `match`, já é uma circunstância diferente, porque reparem: temos **[[05:09](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=309)]** exatamente a mesma estrutura que o `switch`, montado, obviamente, na estrutura do `match`. Nesse caso, a pergunta: se o valor **[[05:17](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=317)]** do `$x`, que é uma *string* que tem o valor, uma— o algarismo 1, se for 1 é um "inteiro" **[[05:23](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=323)]** se for '1' é uma "string". Ora, o que está aqui implicitamente feito dentro é uma verificação com este sinal **[[05:31](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=331)]** de **triplo igual (`===`)**, ao invés do que acontece aqui dentro, o que é feito com o sinal do comparador de valores. Ok? **[[05:39](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=339)]** Então, nós aqui iremos ter uma *string* eventualmente. O *output* de todos estes exemplos que nós aqui temos é o "número 10", depois tem separadores para o "número 10", é o "inteiro" e "string". **[[05:46](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=346)]**
+
+E vocês podem parar o vídeo e voltar atrás e verificar cada um destes momentos. Os separadores que estão são os `HR` e vão verificar **[[05:59](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=359)]** como funciona então esta expressão `match`, que eu volto a referir, é uma **novidade** **[[06:06](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=366)]** introduzida na **versão 8 do PHP**.
+
+-----
+
+### Análise dos Principais Conceitos, Argumentos e Implicações
+
+#### **1. Conceito e Tema Central**
+
+| Conceito / Tema Central | Explicação |
+| :--- | :--- |
+| **Expressão Condicional `match` (PHP 8)** | É uma **nova instrução condicional** introduzida no **PHP 8** [[00:00](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=0)], [[06:06](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=366)]. É apresentada como uma alternativa ao `switch` com uma **sintaxe mais concisa e compacta** [[00:08](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=8)]. |
+| **Sintaxe Concisa** | Diferente do `switch`, o `match` pode ser usado para **atribuir um valor diretamente** a uma variável ou ser usado dentro de um `echo` [[01:12](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=72)], [[01:22](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=82)]. Além disso, ele **não necessita do `break`** [[02:10](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=130)]. |
+| **Comparação Estrita por Tipo e Valor** | O argumento mais crucial: o `match` realiza comparações estritas (como o operador **`===` - triplo igual**) [[04:05](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=245)], [[05:23](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=323)]. Isto significa que ele verifica tanto o **valor** quanto o **tipo de dado** (ex: `1` inteiro é diferente de `'1'` *string*), resolvendo a ambiguidade de coerção implícita do `switch` [[04:55](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=295)]. |
+| **Bloco de Expressão Única** | Para cada condição, o `match` só permite a execução de **uma única expressão** ou declaração, ao contrário do `switch`, que pode ter múltiplas linhas de código por *case* [[02:03](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=123)], [[02:19](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=139)]. |
+
+-----
+
+#### **2. Argumentos e Implicações Práticas**
+
+| Implicação / Argumento | Explicação Prática |
+| :--- | :--- |
+| **Valor de Retorno (Atribuição)** | O `match` é uma **expressão** (e não uma instrução), o que significa que ele retorna um valor. Este valor de retorno pode ser atribuído diretamente a uma variável (`$opção = match(...)`) [[01:22](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=82)], [[02:39](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=159)]. |
+| **Sem `break`** | A eliminação da instrução `break` [[01:06](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=66)] simplifica o código e **elimina o risco de *fall-through*** (execução do *case* seguinte), que é uma fonte comum de erros no `switch`. |
+| **Condições Múltiplas por `case`** | É possível agrupar múltiplos valores (separados por vírgula) em uma única *branch* do `match` (ex: `4, 5, 6`) que executarão o mesmo código, tornando-o mais limpo para múltiplas correspondências [[02:53](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=173)]. |
+| **`default` (Com Seta)** | O bloco alternativo, semelhante ao `default` do `switch`, é representado no `match` por `default =>` [[01:57](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=117)]. |
+
+-----
+
+#### **3. Exemplos Utilizados e Referências**
+
+| Referência / Exemplo | Contexto |
+| :--- | :--- |
+| **Exemplo de `switch` vs. `match`** | Comparação lado a lado do `switch` tradicional com a nova sintaxe concisa do `match` para a mesma avaliação (`$x = 10`) [[00:16](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=16)], [[01:06](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=66)]. |
+| **Exemplo de Coerção de Tipo** | Demonstração da diferença na comparação entre: 1) **`switch`**: avalia `'1'` (string) como igual a `1` (inteiro) devido à coerção implícita [[04:46](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=286)]. 2) **`match`**: avalia `'1'` (string) como **diferente** de `1` (inteiro) devido à comparação estrita (`===`) [[05:09](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=309)]. |
+| **Agrupamento de Valores** | Demonstração do uso de vírgulas para agrupar múltiplos valores (`4, 5, 6`) que resultam no mesmo *output* [[02:53](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=173)].
+| **Referência Relevante** | O `match` é uma **novidade introduzida na versão 8 do PHP** [[06:06](http://www.youtube.com/watch?v=7uf7hpjWc0E&t=366)]. |
+
+-----
+
+URL do vídeo: [PHP 8 \#026 NOVA INSTRUÇÃO CONDICIONAL MATCH DO PHP 8](https://www.google.com/search?q=http://www.youtube.com/watch%3Fv%3D7uf7hpjWc0E%26t%3D121s)
+http://googleusercontent.com/youtube_content/2

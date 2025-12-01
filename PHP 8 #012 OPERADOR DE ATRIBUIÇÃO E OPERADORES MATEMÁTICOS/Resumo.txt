@@ -1,0 +1,35 @@
+Segue a transcrição do vídeo "PHP 8 #012 OPERADOR DE ATRIBUIÇÃO E OPERADORES MATEMÁTICOS" do canal João Ribeiro, com a devida identificação e explicação dos principais conceitos, argumentos e temas centrais abordados:
+
+O professor inicia o vídeo explicando que operadores em linguagens de programação são símbolos que permitem executar diversos tipos de operações, como atribuição, matemáticas, lógicas ou de comparação [[00:00](http://www.youtube.com/watch?v=z_InSDtW44E&t=0)].
+
+**Principais Conceitos e Exemplos:**
+
+* **Operador de Atribuição (`=`)** [[00:09](http://www.youtube.com/watch?v=z_InSDtW44E&t=9)]: O sinal de igual (`=`) é o operador de atribuição, que permite atribuir um valor a uma variável.
+    * **Exemplo:** `variável = 100` [[00:16](http://www.youtube.com/watch?v=z_InSDtW44E&t=16)] ou `variável = "João"` [[00:32](http://www.youtube.com/watch?v=z_InSDtW44E&t=32)].
+    * É possível atribuir o mesmo valor a múltiplas variáveis em uma única linha (ex: `C = D = H = 100`) [[03:06](http://www.youtube.com/watch?v=z_InSDtW44E&t=186)].
+
+* **Operadores Matemáticos (Aritméticos)** [[00:40](http://www.youtube.com/watch?v=z_InSDtW44E&t=40)]: Servem para realizar cálculos, uma componente fundamental em programação.
+    * **Adição:** `+` (mais) [[01:01](http://www.youtube.com/watch?v=z_InSDtW44E&t=61)]
+    * **Subtração:** `-` (hífen) [[01:06](http://www.youtube.com/watch?v=z_InSDtW44E&t=66)]
+    * **Multiplicação:** `*` (asterisco) [[01:08](http://www.youtube.com/watch?v=z_InSDtW44E&t=68)]
+    * **Divisão:** `/` (barra) [[01:09](http://www.youtube.com/watch?v=z_InSDtW44E&t=69)]
+    * **Módulo:** `%` (porcentagem) [[01:17](http://www.youtube.com/watch?v=z_InSDtW44E&t=77)]: Devolve o restante de uma divisão.
+        * **Exemplos de Módulo:**
+            * `100 % 3` resulta em `1` [[01:31](http://www.youtube.com/watch?v=z_InSDtW44E&t=91)], pois 100 dividido por 3 dá 33 com resto 1.
+            * `60 % 3` resulta em `0` [[01:45](http://www.youtube.com/watch?v=z_InSDtW44E&t=105)], pois 60 dividido por 3 dá 20 com resto 0.
+            * `13 % 2` resulta em `1` [[02:02](http://www.youtube.com/watch?v=z_InSDtW44E&t=122)].
+
+**Implicações Teóricas e Práticas:**
+
+* O professor demonstra a utilização combinada do operador de atribuição e operadores matemáticos em um script PHP [[00:54](http://www.youtube.com/watch?v=z_InSDtW44E&t=54)].
+* Ele mostra um exemplo prático de divisão e módulo no navegador, explicando como o módulo pode ser útil para verificar se uma divisão por um valor resulta em resto zero [[02:09](http://www.youtube.com/watch?v=z_InSDtW44E&t=129)].
+* É ressaltado que os operadores aritméticos podem ser usados para operações entre valores de variáveis, entre variáveis e valores explícitos, ou até mesmo entre uma variável e a multiplicação por outra variável, permitindo implementações complexas [[03:35](http://www.youtube.com/watch?v=z_InSDtW44E&t=215)].
+* A utilização de operadores de atribuição e matemáticos é uma constante em códigos de programação [[04:04](http://www.youtube.com/watch?v=z_InSDtW44E&t=244)].
+
+**Referência Relevante Mencionada:**
+
+* **Operador de Expoente (`**`)** [[04:12](http://www.youtube.com/watch?v=z_InSDtW44E&t=252)]: Introduzido a partir do PHP 5.6, permite calcular a potência.
+    * **Exemplo:** `X = 4 ** 2` [[04:24](http://www.youtube.com/watch?v=z_InSDtW44E&t=264)] significa 4 elevado à potência de 2 (4 ao quadrado), resultando em `16` [[04:33](http://www.youtube.com/watch?v=z_InSDtW44E&t=273)].
+
+O vídeo pode ser acessado através do seguinte link: [https://www.youtube.com/watch?v=z_InSDtW44E](https://www.youtube.com/watch?v=z_InSDtW44E)
+http://googleusercontent.com/youtube_content/1

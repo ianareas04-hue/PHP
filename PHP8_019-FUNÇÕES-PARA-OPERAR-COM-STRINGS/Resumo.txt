@@ -1,0 +1,48 @@
+O vídeo, intitulado **"PHP 8 #019 FUNÇÕES PARA OPERAR COM STRINGS"** do canal João Ribeiro, introduz o conceito de funções em PHP focadas na manipulação de *strings*, abordando as ferramentas mais comuns e algumas novidades do PHP 8.
+
+## 1. Transcrição e Resumo da Fala do Professor
+
+A transcrição integral não pôde ser recuperada como um texto contínuo, mas a fala do professor está resumida abaixo, organizada por tópicos e com a inclusão de *timestamps* para facilitar a navegação no vídeo.
+
+### Funções e Variáveis String
+* **Funções:** São definidas como um bloco de código que, tipicamente, recebe valores (*argumentos*), executa cálculos ou análises e retorna um resultado **[[00:12](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=12)]**.
+* **Strings como Coleções:** Uma *string* é tratada como uma coleção de caracteres. O PHP utiliza **índice de base zero**, ou seja, o primeiro caractere da *string* está na posição 0 **[[01:09](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=69)]**.
+* **Acesso a Caracteres:** É possível aceder a um caractere específico da *string* usando parênteses retos e o índice da posição (ex: `frase[0]`) **[[00:45](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=45)]**.
+
+### Comparação de Strings
+* **Operadores:** *Strings* podem ser comparadas usando operadores lógicos tradicionais, como igualdade (`==`) e diferença (`!=`) **[[01:50](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=110)]**.
+* **Implicação Prática:** A comparação não se baseia no comprimento da *string*, mas sim no seu valor. O professor menciona o uso de dois ou três sinais de igual (`==` ou `===`), sendo que o terceiro compara também o tipo de variável, o que é redundante se já se sabe que ambas são *strings* **[[02:27](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=147)]**.
+
+### Funções Comuns de Manipulação de Strings
+
+O professor detalha várias funções nativas do PHP para operar com *strings*:
+
+| Função | Conceito/Ação | Exemplo/Implicação Prática | Tempo |
+| :--- | :--- | :--- | :--- |
+| **`strlen()`** | Retorna o **comprimento total** da *string* (o número de caracteres). (`str` = string, `len` = length) | Contabiliza todos os caracteres, incluindo espaços **[[03:03](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=183)]**. | **[[03:11](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=191)]** |
+| **`substr()`** | Retorna uma **sub-string** de uma *string*. | Requer 3 argumentos: a *string* original, a posição inicial (índice base zero) e o número de caracteres a retornar. Ex: `substr($frase, 0, 4)` **[[03:41](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=221)]**. | **[[03:47](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=227)]** |
+| **`strtoupper()`** | Converte todos os caracteres da *string* para **letras maiúsculas** (`up` = *upper*) **[[04:14](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=254)]**. | **[[04:22](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=262)]** |
+| **`strtolower()`** | Converte todos os caracteres da *string* para **letras minúsculas** (`lower`) **[[04:25](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=265)]**. | **[[04:33](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=273)]** |
+| **`str_replace()`** | **Substitui** todas as ocorrências de um caractere ou sub-string por outro. | Requer 3 argumentos: o que procurar, o que usar para substituir, e a *string* a ser analisada **[[04:47](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=287)]**. | **[[04:55](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=295)]** |
+| **`strpos()`** | Retorna a **posição** (índice) da primeira ocorrência de um determinado caractere/sub-string. (`pos` = position) | Se a primeira ocorrência da letra 'a' for na quarta letra, o resultado será o índice **3** (devido ao índice de base zero) **[[05:04](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=304)]**. | **[[05:11](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=311)]** |
+
+### Funções Novas do PHP 8
+
+O professor ressalta que o **PHP 8** introduziu novas funções para facilitar operações comuns com *strings*, tornando o código mais legível:
+
+| Função | Conceito/Ação | Implicação Teórica/Prática | Tempo |
+| :--- | :--- | :--- | :--- |
+| **`str_contains()`** | Verifica se uma *string* **contém** uma sub-string específica. | Retorna um valor Booleano (`true` ou `false`). Simplifica o teste de conteúdo **[[05:58](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=358)]**. | **[[06:06](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=366)]** |
+| **`str_starts_with()`** | Verifica se uma *string* **começa com** uma sub-string específica. | É **case sensitive** (diferencia maiúsculas e minúsculas) **[[06:22](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=382)]**. | **[[06:36](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=396)]** |
+| **`str_ends_with()`** | Verifica se uma *string* **termina com** uma sub-string específica. | Se houver um espaço no final da *string* mas não na expressão de busca, o resultado será `false` **[[06:44](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=404)]**. | **[[06:51](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=411)]** |
+
+## 2. Referências Relevantes Mencionadas
+
+O professor faz referência a um recurso de documentação oficial, ressaltando que existem imensas funções nativas do PHP para trabalhar com *strings*:
+
+* **Referência (Link externo):** É apresentada uma referência muito extensa com a lista de **praticamente todas as funções** existentes para manipulação de *strings* em PHP **[[05:36](http://www.youtube.com/watch?v=C_FVvtqJsZ0&t=336)]**.
+
+---
+*Você pode consultar o vídeo através do link: [PHP 8 #019 FUNÇÕES PARA OPERAR COM STRINGS](https://www.youtube.com/watch?v=C_FVvtqJsZ0)*
+
+http://googleusercontent.com/youtube_content/0

@@ -1,0 +1,20 @@
+O vídeo aborda o uso de comentários na linguagem de programação PHP. Embora não seja possível fornecer a transcrição integral, o resumo a seguir explica os principais conceitos.
+
+### O que são comentários?
+* Comentários são trechos de texto no código que são ignorados pelo interpretador [[00:06](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=6)]. Sua principal função é documentar o código e torná-lo mais compreensível para outros desenvolvedores.
+
+### Tipos de comentários em PHP
+O professor apresenta três tipos de comentários em PHP [[00:18](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=18)]:
+* **Comentário de uma linha:** Criado com duas barras (`//`) ou um cardinal (`#`) no início da linha [[00:25](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=25)].
+* **Comentário de múltiplas linhas:** Para comentar várias linhas, o código é inserido entre a sintaxe `/*` e `*/` [[00:43](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=43)].
+
+### Uso prático dos comentários
+* **Desativar Código:** Comentários são úteis para desativar temporariamente partes do código durante testes, sem a necessidade de excluí-las [[01:36](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=96)]. O professor mostra como o Visual Studio Code muda a cor do texto para indicar que ele foi comentado e será ignorado pelo interpretador [[01:49](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=109)].
+* **Atalho no Visual Studio Code:** O atalho `Ctrl + /` no Visual Studio Code pode ser usado para comentar ou descomentar uma ou mais linhas de código [[02:15](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=135)].
+
+### Comentários em PHP vs. Comentários em HTML
+* **Comentários em PHP:** Não aparecem no código-fonte da página que o usuário vê no navegador, pois são ignorados pelo servidor antes que a página seja gerada [[02:56](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=176)].
+* **Comentários em HTML:** Aparecem no código-fonte da página, pois são interpretados pelo navegador [[03:02](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=182)]. O vídeo demonstra visualmente essa diferença, mostrando que um comentário em PHP não é visível no código-fonte da página, enquanto um comentário em HTML sim [[03:56](http://www.youtube.com/watch?v=Y7AF4fYuatU&t=236)].
+
+O vídeo não contém informações suficientes para uma transcrição completa.
+http://googleusercontent.com/youtube_content/4
