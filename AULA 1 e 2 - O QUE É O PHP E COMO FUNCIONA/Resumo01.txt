@@ -1,0 +1,42 @@
+O vídeo "PHP 8 #002 O QUE É O PHP E COMO FUNCIONA", apresentado por João Ribeiro, oferece uma visão geral do PHP, sua funcionalidade e evolução. Abaixo, estão os principais pontos abordados na exposição:
+
+### O que é o PHP e para que serve?
+
+* O PHP é uma linguagem de programação usada para desenvolver aplicativos e páginas web. Sua principal função é criar conteúdo dinâmico, ao contrário do HTML, que é usado para conteúdo estático [[00:15](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=15)].
+* É uma das linguagens de programação mais populares na web [[00:24](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=24)].
+* Suas aplicações incluem:
+    * Criação de APIs (Application Programming Interface) [[00:31](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=31)].
+    * Sistemas de Gerenciamento de Conteúdo (CMSs), como o WordPress [[00:39](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=39)].
+    * Lojas virtuais e plataformas de gerenciamento [[00:46](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=46)].
+
+### Histórico e Evolução
+
+* Criado em 1995 por Rasmus Lerdorf, o PHP existe há cerca de 25 anos [[00:54](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=54)].
+* A linguagem tem um histórico de "amor e ódio" na comunidade de programadores, sendo frequentemente vista como insegura e mal estruturada [[01:08](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=68)]. O vídeo sugere que essa visão é muitas vezes equivocada e que a linguagem evoluiu significativamente [[01:22](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=82)].
+* Apesar das críticas, o PHP ainda mantém um mercado de trabalho considerável [[01:34](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=94)].
+
+### Como o PHP funciona?
+
+O vídeo explica o funcionamento do PHP por meio da comparação com um site estático.
+
+* **Processo de um site estático:**
+    1.  O navegador do usuário envia uma requisição para o servidor web [[02:18](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=138)].
+    2.  O servidor encontra os arquivos estáticos (HTML, JavaScript, imagens) e os devolve ao navegador como resposta [[02:34](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=154)].
+
+* **Processo de um site dinâmico (com PHP):**
+    1.  O navegador envia uma requisição para um servidor web que tem um processador e interpretador de PHP [[03:06](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=186)].
+    2.  O servidor ativa o processador de PHP, que executa os scripts necessários [[03:36](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=216)].
+    3.  O PHP pode interagir com um banco de dados ou com o sistema de arquivos do servidor para obter dados [[03:43](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=223)].
+    4.  Após o processamento, o PHP gera um arquivo HTML [[03:56](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=236)].
+    5.  O servidor envia a resposta em HTML para o navegador, pois os navegadores só entendem HTML, JavaScript e imagens [[04:03](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=243)]. O PHP é interpretado do lado do servidor [[04:09](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=249)].
+
+### Cenários de utilização do PHP
+
+O vídeo descreve três maneiras de usar o PHP em projetos:
+
+* **Arquivos exclusivos com código PHP:** O arquivo contém apenas código PHP [[04:52](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=292)].
+* **Arquivos HTML que contêm PHP:** O PHP é usado para a lógica de negócio e cálculos, enquanto o HTML é usado para a apresentação [[05:00](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=300)].
+* **HTML e PHP misturados:** É possível misturar HTML e PHP no mesmo arquivo [[05:12](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=312)]. O apresentador observa que essa prática é uma das razões pelas quais alguns programadores não gostam da linguagem, mas ressalta que as *frameworks* de PHP modernas permitem um código muito mais limpo [[05:20](http://www.youtube.com/watch?v=pEx4yT-kcYs&t=320)].
+
+O vídeo não contém informações suficientes para uma transcrição completa.
+http://googleusercontent.com/youtube_content/0
